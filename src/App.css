@@ -1,0 +1,277 @@
+*{
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+}
+#root {
+  height:100%;
+  width:100%;
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
+  color-scheme: light dark;
+  color: rgba(rgb(255, 255, 255));
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.App{
+  height:100%;
+  width:100%;
+  display:grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-areas:
+  "nav main"
+  ;
+  justify-items:center;
+}
+html{
+  height:100%;
+  width:100%;
+}
+body{
+  background-image:url(../wallhaven-4ywpyk2.jpg);
+  background-size:cover;
+  background-attachment:fixed;
+  height:100%;
+  width:100%;
+}
+nav{
+  justify-self:right;
+  height:fit-content;
+  margin-top:50px;  
+  width:133px;
+}
+li{
+    list-style-type:none;
+}
+.desktopHide{
+  display:none;
+}
+nav ul {
+  text-align:right;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  font-size:31px;
+  line-height:1.5;
+}
+nav li :hover{
+  color:rgb(199, 103, 103);
+}
+nav li .active{
+  color:rgb(199, 103, 103);
+}
+#easteregg{
+  width:100%;
+  height:20px;
+}
+.beta{
+  display:none;
+}
+main{
+  height:fit-content;
+  margin-top:50px;
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+.homecontainer{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:Center;
+  width:60vw;
+  max-width:1100px;
+  min-width:530px;
+  height:900px;
+}
+.indextextcontainer{
+  text-align:center;
+  width:100%;
+  font-size:1.6rem;
+  margin-bottom:30px;
+}
+.indextextcontainer hr{
+  width:80%;
+  color:rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
+.homecontainer img, .aboutmecontainer img{
+  border-radius:50%;
+}
+.medialinks a{
+  font-size:55px;
+  margin-left:8px;
+  margin-right:8px;
+  color:white;
+}
+.aboutmecontainer{
+  display:flex;
+  flex-direction:row;
+  text-align:center;
+  width:70vw;
+  max-width: 1100px;
+  min-width:605px;
+  height:900px
+}
+.aboutmetextcontainer{
+  font-size: 1.6rem;
+}
+.aboutmetextcontainer p{
+  margin-top:1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.aboutmetextcontainer hr{
+  width:90%;
+  margin: auto;
+}
+.aboutme-aside{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background: rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  max-width:300px;
+  min-width:250px;
+}
+.aboutme-aside li{
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+.aboutme-aside hr{
+  color:rgba(255,255,255,0.3);
+}
+.profilepicaboutme{
+  margin-top:30px;
+  width:200px;
+}
+.portfoliocontainer{
+  width:60vw;
+  max-width:1100px;
+  min-width:530px;
+  height:90vh;
+  min-height:500px;
+  overflow:auto;
+  text-align:center;
+}
+.portfoliocontainer h1{
+  padding-top:30px;
+}
+.portfoliocontainer img{
+  max-width:500px;
+  padding-top:10px;
+}
+.project{   
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.project button{
+  cursor:pointer;
+  background:rgba(0, 0, 0, 0.25);
+  color:white;
+  border: 0;
+  font-size:16px;
+  width:90px;
+  height:35px;
+  border-radius:0;
+}
+.texttohide{
+  width:80%;
+  font-size:24px;
+  margin:auto;
+}
+.githublink{
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+}
+.githublink a{
+  font-size: 30px;
+  color:white;
+  text-decoration:underline;
+}
+.githublinks li :hover{
+  color:rgb(199, 103, 103);
+}
+@media only screen and (max-width: 720px) {
+  .App{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "nav"
+    "main"
+    ;
+    
+  }
+  nav{
+    width:100vw;
+    height:30px;
+    justify-self: left;
+    margin-top:0px;
+    white-space:nowrap; 
+  }
+  nav ul{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+  }
+  nav li{
+    width:100%;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.7)
+  }
+  nav a{
+    font-size:20px;
+  }
+  .mobileHide{
+    display:none;
+  }
+  main{
+    height:100%;
+    margin-top:0px;
+    overflow:hidden;
+  }
+  .mobilecontainer{
+    max-width:100%;
+    min-width:360px;
+    width:100vw;
+    height:100vh;
+    max-height:100%;
+    min-height:600px;
+    overflow:auto;
+  }
+  .indextextcontainer h1{
+    font-size:2rem;
+  }
+  .indextextcontainer a{
+    font-size:3.6rem;
+    color:white;
+  }
+  .aboutmecontainer{
+    min-height:860px;
+    display: flex;
+    flex-direction:column-reverse;
+  }
+  .aboutme-aside{
+    margin-top:40px;
+    padding-top:20px;
+    justify-content:start;
+    width:100vw;
+    max-width:100%;
+    height:100%;
+    min-height:900px;
+    max-height:900px;
+  }
+  .portfoliocontainer img{
+    max-width:100vw;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+  }
+}

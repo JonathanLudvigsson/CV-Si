@@ -1,0 +1,30 @@
+{
+"educations":[  
+    {
+        "id":1,
+        "name":"Teknikprogrammet", 
+        "location":"Peder Skrivares Skola", 
+        "duration":"2016-2019"},  
+    {
+        "id":2,
+        "name":"Systemutvecklare .NET", 
+        "location":"Campus Varberg", 
+        "duration":"2022-Pågående"} 
+],
+"skills":[
+    {
+        "id": 1,
+        "name":"C# & .NET"},
+    {
+        "id": 2,
+        "name":"SQL"}
+],
+"learning":[
+    {
+        "id": 1,
+        "name":"HTML, CSS & JavaScript"},
+    {
+        "id": 2,
+        "name":"React"}
+]
+}  
