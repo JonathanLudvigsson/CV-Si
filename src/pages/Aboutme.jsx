@@ -9,7 +9,7 @@ function Aboutme(){
                     </div>
                 </aside>
                 <div className="aboutmetextcontainer">
-                        <img src="./jag.jpg" alt="Bild på mig som barn" class="profilepicaboutme" />
+                        <img src="/jag.jpg" alt="Bild på mig som barn" class="profilepicaboutme" />
                         <h1>Om Mig</h1>
                         <hr />
                         <p>Mitt namn är Jonathan Ludvigsson och jag är studerande till Systemutvecklare .NET på Campus Varberg. Jag har alltid haft ett stort intresse inom datorer och teknik

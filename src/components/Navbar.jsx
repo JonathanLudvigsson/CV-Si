@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import EasterEgg from "./EasterEgg"
 
 function Navbar() {
     return (
@@ -19,7 +20,7 @@ function Navbar() {
                 <NavLink to="/contactme"><FontAwesomeIcon icon={faChevronRight} className="mobileHide"></FontAwesomeIcon>Kontakta mig</NavLink>
                 </li>
                 <li id = "easteregg" className="mobileHide">
-
+                <EasterEgg />
                 </li>
             </ul>
         </nav>

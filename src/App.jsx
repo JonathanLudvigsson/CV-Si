@@ -10,11 +10,13 @@ import Home from "./pages/Home";
 import Aboutme from "./pages/Aboutme";
 import Portfolio from "./pages/Portfolio";
 import Contactme from "./pages/Contactme";
+import KonamiCode from "./components/KonamiCode"
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
+    <KonamiCode />
     <Navbar />
       <main>
         <Routes>

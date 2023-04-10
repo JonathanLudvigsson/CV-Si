@@ -8,7 +8,7 @@ import {faReddit} from "@fortawesome/free-brands-svg-icons";
 function Home(){
     return (
         <div className="homecontainer mobilecontainer">
-                <img src="../jag.jpg" alt="Bild på mig som barn" className="profilepic" />
+                <img src="/jag.jpg" alt="Bild på mig som barn" className="profilepic" />
                 <div className="indextextcontainer">
                     <h1>Jonathan Ludvigsson</h1>
                     <h1>SYSTEMUTVECKLARE</h1>

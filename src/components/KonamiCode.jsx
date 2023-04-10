@@ -7,8 +7,7 @@ function KonamiCode(){
       if (event.key.toLowerCase() == nextKey.toLowerCase()){
         konamiPos+=1;
         if (konamiPos == konamiCode.length){
-          console.log("YOU GOT THE KONAMI CODE YOU'RE THE BEEEEEST")
-          audio.play();
+          window.alert("You got the easter egg!")
           konamiPos = 0;
         }
       }
@@ -18,4 +17,4 @@ function KonamiCode(){
       })
 }
 
-KonamiCode();
+export default KonamiCode;
